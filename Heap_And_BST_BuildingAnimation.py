@@ -298,17 +298,17 @@ class HeapBSTree:
         else:
           recursiveBSTpush(self.__BSTRoot, value)
 
-    def pop(self):
-        if self.__last_index == -1:
-            raise IndexError('pop from empty heap')
+      # def pop(self):
+      #     if self.__last_index == -1:
+      #         raise IndexError('pop from empty heap')
 
-        min_value = self.__heap[0]
+      #     min_value = self.__heap[0]
 
-        self.__heap[0] = self.__heap[self.__last_index]
-        self.__last_index -= 1
-        self.__siftdown(0)
+      #     self.__heap[0] = self.__heap[self.__last_index]
+      #     self.__last_index -= 1
+      #     self.__siftdown(0)
 
-        return min_value
+      #     return min_value
 
     def __siftup(self, index):
         while index > 0:
@@ -368,7 +368,6 @@ class HeapBSTree:
 
     def __len__(self):
         return self.__last_index + 1
-
   
     def __str__(self):
         lines = self.__build_tree_string(0)[0]
