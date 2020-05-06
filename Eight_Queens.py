@@ -121,4 +121,4 @@ def run():
     print("Goals Found: {}".format(len(NQueensNode.goals)))
 
 
-run()
+#run()
